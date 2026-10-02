@@ -1,0 +1,149 @@
+.gallery-toolbar {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin: 0 auto 32px;
+    padding: 14px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 18px;
+    background: rgba(255, 255, 255, 0.07);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2), inset 0 1px rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(22px);
+    -webkit-backdrop-filter: blur(22px);
+}
+
+.gallery-search { display: flex; align-items: center; gap: 12px; flex: 1; min-width: 0; padding: 0 16px; color: rgba(255, 255, 255, 0.65); }
+.gallery-search input { width: 100%; min-width: 0; padding: 10px 0; border: 0; outline: 0; background: transparent; color: #fff; font: inherit; }
+.gallery-search input::placeholder { color: rgba(255, 255, 255, 0.55); }
+.favorites-toggle { display: inline-flex; align-items: center; justify-content: center; gap: 9px; min-height: 44px; padding: 9px 16px; border: 1px solid rgba(255, 255, 255, 0.22); border-radius: 12px; background: rgba(255, 255, 255, 0.08); color: #fff; font: inherit; cursor: pointer; transition: background 0.2s ease, border-color 0.2s ease, transform 0.2s ease; }
+.favorites-toggle:hover { transform: translateY(-1px); background: rgba(255, 255, 255, 0.14); }
+.favorites-toggle.is-active { border-color: rgba(255, 80, 120, 0.7); background: rgba(210, 40, 85, 0.28); }
+.favorites-count { min-width: 1.5em; color: #ff819f; font-weight: 700; }
+.gallery-card { position: relative; }
+.favorite-button { position: absolute; z-index: 2; top: 14px; right: 14px; display: grid; width: 42px; height: 42px; place-items: center; border: 1px solid rgba(255, 255, 255, 0.35); border-radius: 50%; background: rgba(15, 15, 25, 0.48); color: #fff; font-size: 18px; cursor: pointer; opacity: 0; transform: scale(0.85); transition: opacity 0.2s ease, transform 0.2s ease, color 0.2s ease, background 0.2s ease; backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); }
+.gallery-card:hover .favorite-button, .gallery-card:focus-within .favorite-button, .favorite-button.is-favorite { opacity: 1; transform: scale(1); }
+.favorite-button.is-favorite { color: #ff587b; background: rgba(30, 15, 25, 0.72); }
+.gallery-card[hidden] { display: none !important; }
+@media (max-width: 600px) { .gallery-toolbar { gap: 6px; padding: 9px; margin-bottom: 22px; } .gallery-search { gap: 8px; padding: 0 8px; } .favorites-toggle { gap: 6px; padding: 8px 10px; font-size: 14px; } .favorite-button { top: 9px; right: 9px; width: 38px; height: 38px; opacity: 1; transform: none; } }
+
+.main2-1 {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    gap: 12px;
+}
+
+.main2-2 {
+    margin-top: 150px;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    gap: 12px;
+}
+
+.BOX2 {
+    height: 100%;
+    min-width: 70px;
+    border-radius: 20px;
+    overflow: hidden;
+    flex-grow: 1;
+    display: flex;
+    align-items: flex-end;
+    transition: 1.2s ease;
+    position: relative;
+}
+
+.BOX2 video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    display: block;
+}
+
+.main2-1 .box1 {
+    background: linear-gradient(transparent 65%, rgba(0, 0, 0, 0.833));
+}
+
+.main2-1 .box2 {
+    background: linear-gradient(transparent 65%, rgba(0, 0, 0, 0.833));
+
+}
+
+.main2-1 .box3 {
+    background: linear-gradient(transparent 65%, rgba(0, 0, 0, 0.833));
+
+}
+
+.main2-1 .box4 {
+    background: linear-gradient(transparent 65%, rgba(0, 0, 0, 0.833));
+
+}
+
+.main2-1 .box5 {
+    background: linear-gradient(transparent 65%, rgba(0, 0, 0, 0.833));
+
+}
+
+.text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 12px;
+    display: none;
+
+}
+
+.download-btn {
+    width: 150px;
+    padding: 9px 10px;
+    font-family: "Lequire";
+    display: flex;
+    gap: 3px;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.09);
+    backdrop-filter: blur(26px);
+    -webkit-backdrop-filter: blur(26px);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow:
+        0 8px 32px rgba(0, 0, 0, 0.1),
+        inset 0 1px 0 rgba(255, 255, 255, 0.5),
+        inset 0 -1px 0 rgba(255, 255, 255, 0.1),
+        inset 0 0 6px 3px rgba(255, 255, 255, 0.3);
+    visibility: hidden;
+    opacity: 0;
+    transition: 1s linear;
+
+}
+
+.BOX2:hover .text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+.BOX2:hover .download-btn {
+    visibility: visible;
+    opacity: 1;
+}
+
+.BOX2:hover {
+    flex-grow: 7;
+    box-shadow:
+        0 8px 32px rgba(0, 0, 0, 0.1),
+        0 1px 0 rgba(255, 255, 255, 0.5),
+        0 -1px 0 rgba(255, 255, 255, 0.1),
+        0 0 6px 3px rgba(255, 255, 255, 0.3);
+
+}
+

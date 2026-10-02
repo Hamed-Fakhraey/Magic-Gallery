@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html id="page-Game" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Magic Gallery</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand&family=Rubik&family=Nunito&family=Raleway&family=Fira+Sans&family=Kanit&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/5fd60fb351.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="Css/style.css" />
+    <link rel="stylesheet" href="Css/loading.css" />
+    <link rel="stylesheet" href="Css/scrol-b.css" />
+  </head>
+  <script src="Js/loading.js"></script>
+  <body>
+    <div class="bg-shapes">
+      <div class="shape shape-1"></div>
+      <div class="shape shape-2"></div>
+      <div class="shape shape-3"></div>
+      <div class="shape shape-4"></div>
+      <div class="shape shape-5"></div>
+      <div class="shape shape-6"></div>
+      <div class="shape shape-7"></div>
+      <div class="shape shape-8"></div>
+    </div>
+    <div id="loading-screen">
+      <div class="loader">
+        <div class="ring"></div>
+        <div class="ring"></div>
+        <div class="ring"></div>
+        <div class="ring"></div>
+      </div>
+    </div>
+    <!-- start header -->
+    <header>
+      <div class="c-t">
+        <div class="head-box">
+          <span class="s-1">🔮</span>
+          <span style="color: black">
+            <a href="https://git.io/typing-svg"
+              ><img
+                src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=16&pause=1000&color=2A2D3E&center=true&vCenter=true&width=435&lines=Welcome+to+the+Magic+Gallery;%E2%9C%A8+A+world+of+beauty+and+magic+%E2%9C%A8"
+                alt="Typing SVG" /></a
+          ></span>
+          <nav>
+            <a href="index.html">Game</a>
+            <a href="index2.html">Live Wallpaper</a>
+            <a href="index-car.html">Car</a>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <br />
+    <!-- end header -->
+    <main>
+      <div class="c-t">
+        <div class="gallery-toolbar" role="search">
+          <label class="gallery-search">
+            <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+            <input id="gallery-search" type="search" placeholder="Search wallpapers..." aria-label="Search wallpapers" />
+          </label>
+          <button class="favorites-toggle" type="button" aria-pressed="false">
+            <i class="fa-solid fa-heart" aria-hidden="true"></i>
+            Favorites <span class="favorites-count" aria-live="polite">0</span>
+          </button>
+        </div>
+        <div id="gallery" data-gallery="game"></div>
+      </div>
+    </main>
+    <!-- start footer -->
+    <footer>
+      <div class="c-t">
+        <div class="footer_items">
+          <div>
+            <a href="" class="footer_brand">Magic Gallery</a>
+          </div>
+          <div>
+            <p>© Created by Hamed Fakhrayi | All rights reserved</p>
+          </div>
+          <div class="social_links">
+            <a href="">
+              <i class="fa-brands fa-twitter"></i>
+            </a>
+            <a href="https://github.com/Hamed-Fakhraey" target="_blank">
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- end footer -->
+    <div id="toast">The desired photo has been downloaded.✔️</div>
+
+    <script src="Js/script.js"></script>
+  </body>
+</html>

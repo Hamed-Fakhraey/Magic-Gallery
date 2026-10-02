@@ -1,0 +1,722 @@
+:root {
+    --bg-color: #000000;
+    --card-bg: rgba(31, 31, 34, 0.96);
+    --text-color: #ffffff;
+    --accent-color: #4f62c9;
+    --secondary-color: #7300ff;
+    --border-color: rgba(0, 0, 0, 0.1);
+    --shadow1: 0 8px 32px 0 rgba(151, 146, 0, 0.511);
+    --skill-bg: #2a2d3e;
+    --gradient: linear-gradient(90deg, #0015ff72, #6d4197);
+    --shape-color-1: rgba(3, 154, 0, 0.338);
+    --shape-color-2: rgba(0, 23, 138, 0.338);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+
+/* font-family: "Quicksand"; */
+/* font-family: "Anurati"; */
+/* font-family: "Nunito"; */
+/* font-family: "Raleway"; */
+/* font-family: "Fira Sans"; */
+/* font-family: "Rubik"; Bungee Outline .  */
+
+.continer {
+    width: 85%;
+    height: 100%;
+}
+
+.bg-shapes {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -10;
+    overflow: hidden;
+}
+
+.shape {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(30px);
+    opacity: 0.6;
+    animation: float 5s infinite ease-in-out;
+}
+
+.shape-1 {
+    width: 300px;
+    height: 300px;
+    background: rgba(0, 0, 146, 0.723);
+    top: -100px;
+    right: -50px;
+}
+
+.shape-2 {
+    width: 340px;
+    height: 340px;
+    background: rgba(0, 0, 146, 0.723);
+
+    bottom: -150px;
+    left: -100px;
+    animation-delay: -5s;
+}
+
+.shape-3 {
+    width: 220px;
+    height: 220px;
+    background: rgba(255, 0, 0, 0.671);
+
+    top: 26%;
+    right: 10%;
+    animation-delay: 2s;
+    animation-duration: 7s;
+}
+
+.shape-4 {
+    width: 250px;
+    height: 250px;
+    background: var(--shape-color-2);
+    bottom: 17%;
+    right: -50px;
+    animation-delay: 0.5s;
+    animation-duration: 6s;
+}
+
+.shape-5 {
+    width: 270px;
+    height: 270px;
+    background: rgba(255, 0, 0, 0.671);
+
+    bottom: 20%;
+    left: 10%;
+    animation-delay: 1.5s;
+}
+
+.shape-6 {
+    width: 260px;
+    height: 260px;
+    background: var(--shape-color-2);
+    bottom: 48%;
+    left: -5%;
+    animation-delay: -2s;
+}
+
+.shape-7 {
+    width: 240px;
+    height: 240px;
+    background: rgba(255, 0, 0, 0.671);
+    bottom: 72%;
+    left: 11%;
+    animation-delay: 1s;
+}
+
+.shape-8 {
+    width: 260px;
+    height: 260px;
+    background: rgba(255, 0, 0, 0.671);
+
+    bottom: -9%;
+    right: 10%;
+    animation-delay: 2s;
+}
+
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateY(0) scale(1);
+    }
+
+    50% {
+        transform: translateY(-20px) scale(1.05);
+        background-color: #57036472;
+    }
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background: var(--bg-color);
+    color: var(--text-color);
+    min-height: 100vh;
+    height: 1000px;
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    transition: all 0.3s ease;
+
+    overflow-x: hidden; */
+
+}
+
+.c-t {
+    width: 85%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+/* start header */
+header {
+    width: 100%;
+    height: 100px;
+    z-index: 1000;
+    position: fixed;
+
+}
+
+.head-box {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgba(255, 255, 255, 0.09);
+    backdrop-filter: blur(26px);
+    -webkit-backdrop-filter: blur(26px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow:
+        0 8px 32px rgba(0, 0, 0, 0.1),
+        inset 0 1px 0 rgba(255, 255, 255, 0.5),
+        inset 0 -1px 0 rgba(255, 255, 255, 0.1),
+        inset 0 0 6px 3px rgba(255, 255, 255, 0.3);
+    position: relative;
+    /* overflow: hidden; */
+}
+
+/* .head-box::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.8),
+    transparent
+  );
+}
+
+.head-box::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1px;
+  height: 100%;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.8),
+    transparent,
+    rgba(255, 255, 255, 0.3)
+  );
+} */
+.s-1 {
+    font-size: 30px;
+    width: 26%;
+    padding-left: 10px;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+    width: 30%;
+    padding-right: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    /* color: #2a2d3e; */
+    color: #000000;
+}
+
+.mo {
+    position: relative;
+    overflow: visible;
+    padding: 1px 5px 8px 5px;
+}
+
+.li-link {
+    position: absolute;
+    top: 30px;
+    right: -20px;
+    padding: 12px 13px;
+    display: flex;
+    gap: 3px;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: space-between; */
+    background: rgba(126, 126, 126, 0.9);
+    backdrop-filter: blur(26px);
+    -webkit-backdrop-filter: blur(26px);
+    border-radius: 5px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow:
+        0 8px 32px rgba(0, 0, 0, 0.9),
+        inset 0 1px 0 rgba(255, 255, 255, 0.9),
+        inset 0 -1px 0 rgba(255, 255, 255, 0.9),
+        inset 0 0 6px 3px rgba(255, 255, 255, 0.9);
+    display: none;
+}
+
+.li-link li {
+    list-style: none;
+}
+
+.mo:hover .li-link {
+    display: inline-block;
+}
+
+/* end header */
+/* start main */
+main {
+    margin-top: 30vh;
+}
+
+.main1 {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    gap: 12px;
+}
+
+.box {
+    height: 100%;
+    min-width: 70px;
+    border-radius: 20px;
+    overflow: hidden;
+    flex-grow: 1;
+    display: flex;
+    align-items: flex-end;
+    transition: 1.2s ease;
+}
+
+.main1 .box1 {
+    background: linear-gradient(transparent 65%, rgba(0, 0, 0, 0.833)), url('../asesst/image/g-1.jpg');
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main1 .box2 {
+    background: linear-gradient(transparent 65%, rgba(0, 0, 0, 0.833)), url('../asesst/image/g-2.jpg');
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main1 .box3 {
+    background: linear-gradient(transparent 65%, rgba(0, 0, 0, 0.833)), url('../asesst/image/g-3.jpg');
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main1 .box4 {
+    background: linear-gradient(transparent 65%, rgba(0, 0, 0, 0.833)), url('../asesst/image/g-4.jpg');
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main1 .box5 {
+    background: linear-gradient(transparent 65%, rgba(0, 0, 0, 0.833)), url('../asesst/image/g-5.jpg');
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+  .gallery-toolbar {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin: 0 auto 32px;
+    padding: 14px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 18px;
+    background: rgba(255, 255, 255, 0.07);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2), inset 0 1px rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(22px);
+    -webkit-backdrop-filter: blur(22px);
+  }
+
+  .gallery-search {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex: 1;
+    min-width: 0;
+    padding: 0 16px;
+    color: rgba(255, 255, 255, 0.65);
+  }
+
+  .gallery-search input {
+    width: 100%;
+    min-width: 0;
+    padding: 10px 0;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    color: #fff;
+    font: inherit;
+  }
+
+  .gallery-search input::placeholder { color: rgba(255, 255, 255, 0.55); }
+
+  .favorites-toggle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+    min-height: 44px;
+    padding: 9px 16px;
+    border: 1px solid rgba(255, 255, 255, 0.22);
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.08);
+    color: #fff;
+    font: inherit;
+    cursor: pointer;
+    transition: background 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
+  }
+
+  .favorites-toggle:hover { transform: translateY(-1px); background: rgba(255, 255, 255, 0.14); }
+  .favorites-toggle.is-active { border-color: rgba(255, 80, 120, 0.7); background: rgba(210, 40, 85, 0.28); }
+  .favorites-count { min-width: 1.5em; color: #ff819f; font-weight: 700; }
+
+  .gallery-card { position: relative; }
+
+  .favorite-button {
+    position: absolute;
+    z-index: 2;
+    top: 14px;
+    right: 14px;
+    display: grid;
+    width: 42px;
+    height: 42px;
+    place-items: center;
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    border-radius: 50%;
+    background: rgba(15, 15, 25, 0.48);
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+    opacity: 0;
+    transform: scale(0.85);
+    transition: opacity 0.2s ease, transform 0.2s ease, color 0.2s ease, background 0.2s ease;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+  }
+
+  .gallery-card:hover .favorite-button,
+  .gallery-card:focus-within .favorite-button,
+  .favorite-button.is-favorite { opacity: 1; transform: scale(1); }
+  .favorite-button.is-favorite { color: #ff587b; background: rgba(30, 15, 25, 0.72); }
+  .gallery-card[hidden] { display: none !important; }
+
+  @media (max-width: 600px) {
+    .gallery-toolbar { gap: 6px; padding: 9px; margin-bottom: 22px; }
+    .gallery-search { gap: 8px; padding: 0 8px; }
+    .favorites-toggle { gap: 6px; padding: 8px 10px; font-size: 14px; }
+    .favorite-button { top: 9px; right: 9px; width: 38px; height: 38px; opacity: 1; transform: none; }
+  }
+
+  .text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 12px;
+    display: none;
+    
+}
+
+.download-btn {
+    width: 150px;
+    padding: 9px 10px;
+    font-family: "Lequire";
+    display: flex;
+    gap: 3px;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.09);
+    backdrop-filter: blur(26px);
+    -webkit-backdrop-filter: blur(26px);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow:
+        0 8px 32px rgba(0, 0, 0, 0.1),
+        inset 0 1px 0 rgba(255, 255, 255, 0.5),
+        inset 0 -1px 0 rgba(255, 255, 255, 0.1),
+        inset 0 0 6px 3px rgba(255, 255, 255, 0.3);
+    visibility: hidden;
+    opacity: 0;
+    transition: 1s linear;
+
+}
+
+.box:hover .text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.box:hover .download-btn {
+    visibility: visible;
+    opacity: 1;
+}
+
+.box:hover {
+    flex-grow: 7;
+    transform: scale(1.1);
+    box-shadow:
+        0 8px 32px rgba(0, 0, 0, 0.1),
+         0 1px 0 rgba(255, 255, 255, 0.5),
+         0 -1px 0 rgba(255, 255, 255, 0.1),
+         0 0 6px 3px rgba(255, 255, 255, 0.3);
+}
+
+.main2 {
+    margin-top: 150px;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    gap: 12px;
+}
+
+.main2 .box1 {
+    background: linear-gradient(transparent 65%, rgba(0, 0, 0, 0.833)), url('../asesst/image/g2-1.jpg');
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main2 .box2 {
+    background: linear-gradient(transparent 65%, rgba(0, 0, 0, 0.833)), url('../asesst/image/g2-2.jpg');
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main2 .box3 {
+    background: linear-gradient(transparent 65%, rgba(0, 0, 0, 0.833)), url('../asesst/image/g2-3.jpg');
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main2 .box4 {
+    background: linear-gradient(transparent 65%, rgba(0, 0, 0, 0.833)), url('../asesst/image/g2-4.jpg');
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main2 .box5 {
+    background: linear-gradient(transparent 65%, rgba(0, 0, 0, 0.833)), url('../asesst/image/g2-5.jpg');
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main3 {
+    margin-top: 150px;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    gap: 12px;
+}
+
+.main3 .box1 {
+    background: linear-gradient(transparent 65%, rgba(0, 0, 0, 0.833)), url('../asesst/image/g3-1.jpg');
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main3 .box2 {
+    background: linear-gradient(transparent 65%, rgba(0, 0, 0, 0.833)), url('../asesst/image/g3-2.jpg');
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main3 .box3 {
+    background: linear-gradient(transparent 65%, rgba(0, 0, 0, 0.833)), url('../asesst/image/g3-3.jpg');
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main3 .box4 {
+    background: linear-gradient(transparent 65%, rgba(0, 0, 0, 0.833)), url('../asesst/image/g3-4.jpg');
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main3 .box5 {
+    background: linear-gradient(transparent 65%, rgba(0, 0, 0, 0.833)), url('../asesst/image/g3-5.jpg');
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main4 {
+    margin-top: 150px;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    gap: 12px;
+}
+
+.main4 .box1 {
+    background: linear-gradient(transparent 65%, rgba(0, 0, 0, 0.833)), url('../asesst/image/g4-1.jpg');
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main4 .box2 {
+    background: linear-gradient(transparent 65%, rgba(0, 0, 0, 0.833)), url('../asesst/image/g4-2.jpg');
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main4 .box3 {
+    background: linear-gradient(transparent 65%, rgba(0, 0, 0, 0.833)), url('../asesst/image/g4-3.jpg');
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main4 .box4 {
+    background: linear-gradient(transparent 65%, rgba(0, 0, 0, 0.833)), url('../asesst/image/g4-4.jpg');
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main4 .box5 {
+    background: linear-gradient(transparent 65%, rgba(0, 0, 0, 0.833)), url('../asesst/image/g4-5.jpg');
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* end main */
+
+#toast {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: rgba(0, 0, 0, 0.65);
+    color: white;
+    padding: 12px 20px;
+    border-radius: 10px;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.4s ease, transform 0.4s ease;
+    pointer-events: none;
+    font-size: 14px;
+}
+
+#toast.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+/* start footer */
+
+footer{
+    margin-top: 150px;
+    background-color: #212528;
+    padding: 70px 0;
+    position: relative;
+}
+
+.footer_items{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+footer a{
+    color: rgba(255, 255, 255, 0.3);
+    text-decoration: none;
+}
+
+p{
+
+    font-family: Raleway;
+    position: absolute;
+    bottom: 5px;
+}
+
+.footer_brand{
+    font-size: 30px;
+    transition: 0.5s;
+    font-family: "Lequire";
+}
+
+.footer_brand:hover{
+    color: #6dc234;
+}
+
+.list_footer li a{
+    padding: 10px 0;
+    display: inline-block;
+}
+
+.list_footer li a:hover{
+    color: #6dc234;
+}
+
+.social_links{
+    display: flex;
+    justify-content: flex-end;
+}
+.social_links a{
+    background-color: rgba(255, 255, 255, 0.05);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 22px;
+    margin: 0 10px;
+    transition: 0.5s;
+}
+
+.social_links a:hover{
+    color: #6dc234;
+        box-shadow:
+        0 8px 32px rgba(0, 0, 0, 0.1),
+         0 2px 0 rgba(136, 255, 172, 0.5),
+         0 -2px 0 rgba(42, 80, 0, 0.1),
+         0 0 6px 3px rgba(20, 111, 10, 0.3);
+}
+@font-face {
+  font-family: "Lequire";
+  src: url("../asesst/font/Lequire.otf") format("truetype");
+}
+/* end footer */

@@ -1,0 +1,34 @@
+/* Smooth Scroll برای کل صفحه */
+html {
+  scroll-behavior: smooth;
+}
+
+/* استایل اسکرول بار برای مرورگرهای وب‌کیت (کروم، اج، سافاری) */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1a0a3c; /* پس زمینه تیره */
+  box-shadow: inset 0 0 5px #7b1fa2; /* سایه بنفش */
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #a64ca6, #7b1fa2);
+  border-radius: 10px;
+  box-shadow: 0 0 10px #a64ca6;
+  border: 3px solid #1a0a3c; /* حاشیه هم رنگ پس زمینه */
+  transition: background 0.3s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #d270d2, #9f4cbf);
+  box-shadow: 0 0 20px #d270d2;
+}
+
+/* استایل اسکرول بار برای فایرفاکس */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #a64ca6 #1a0a3c;
+}
